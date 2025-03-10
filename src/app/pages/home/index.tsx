@@ -6,7 +6,7 @@ import { Sparkles } from "@react-three/drei";
 import "./index.css";
 import Skybox from "@/app/components/Skybox";
 import CameraControls from "@/app/components/CameraControls";
-import Loading from "../loading"; // Importar Loading para mostrar durante la carga
+import Loading from "../loading";
 
 const Home = () => {
   const [cameraPosition, setCameraPosition] = useState<
@@ -33,7 +33,6 @@ const Home = () => {
       <Canvas camera={{ position: cameraPosition, fov: 50 }}>
         <color attach="background" args={["#aabbcc"]} />
         <fog attach="fog" args={["#aabbcc", 1, 15]} />
-        {/* Ajusta para más niebla en la distancia */}
         <ambientLight intensity={0.5} />
         <directionalLight position={[5, 5, 3]} />
         <Skybox />
