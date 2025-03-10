@@ -1,0 +1,42 @@
+/* styles/global.css */
+
+/* Establece el fondo oscuro y asegura que la página ocupe toda la pantalla */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1a202c; /* Fondo oscuro */
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Centra el canvas de React Three Fiber */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  /* Estilos para el texto del portafolio */
+  .portfolio-text {
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+  }
+  
+  .portfolio-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .portfolio-text p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  
+
+  

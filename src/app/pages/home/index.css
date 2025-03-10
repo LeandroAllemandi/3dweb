@@ -1,0 +1,28 @@
+/* home.css */
+
+/* Estilos para el contenedor principal */
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+/* Estilos para el menú de selección de vista */
+.menu-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+}
+
+.menu-container h3 {
+  margin: 0;
+}
+
+.menu-container button {
+  display: block;
+  margin: 5px 0;
+}
