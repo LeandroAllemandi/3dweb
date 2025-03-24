@@ -9,6 +9,30 @@ body, html {
     background-color: #1a202c; /* Fondo oscuro */
     color: white;
     font-family: Arial, sans-serif;
+    font-size: 62.5%; /* 1rem = 10px */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none; 
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #12845a;
+    --secondary-color: #bcf4be;
+    --terciary-color: #222222;
+    --white-color: #ffffff;
+    --navbar-height: 6rem;
   }
   
   /* Centra el canvas de React Three Fiber */

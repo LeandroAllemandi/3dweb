@@ -8,7 +8,7 @@ interface CameraAnimationProps {
   speed?: number;  // Velocidad de transición (0.01 - 1 recomendado)
 }
 
-export const CameraAnimation = ({ targetPosition, targetRotation, speed = 0.01 }: CameraAnimationProps) => {
+export const CameraAnimation = ({ targetPosition, targetRotation, speed = 0.03 }: CameraAnimationProps) => {
   const cameraRef = useRef<THREE.Camera | null>(null);
   const smoothPosition = useRef(new THREE.Vector3(...targetPosition));
   const smoothRotation = useRef(targetRotation);
@@ -35,7 +35,7 @@ export const CameraAnimation = ({ targetPosition, targetRotation, speed = 0.01 }
       cameraRef.current.position.add(offset);
       
       // Asegurar que la cámara mire hacia un objeto o punto específico (aquí se puede cambiar)
-      cameraRef.current.lookAt(new THREE.Vector3(0, 1, 0));
+      cameraRef.current.lookAt(smoothPosition.current);
     }
   });
 

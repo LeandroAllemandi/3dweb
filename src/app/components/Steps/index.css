@@ -1,0 +1,38 @@
+.steps-container {
+  display: flex;
+  flex-direction: column; /* Coloca los pasos en una columna */
+  align-items: center;
+  justify-content: center; /* Centra los pasos horizontalmente */
+  position: absolute;
+  right: 2rem;
+}
+
+.step-group {
+  display: flex;
+  flex-direction: column; /* Asegura que el círculo y la línea estén alineados verticalmente */
+  align-items: center; /* Centra la línea con el círculo */
+}
+
+.step {
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.step.active {
+  background-color: var(--terciary-color);
+}
+
+.line {
+  width: 0.18rem;
+  height: 3rem;
+  background-color: var(--white-color);
+  transition: background-color 0.3s;
+}
+
+.line.active {
+  background-color: var(--terciary-color);
+}
